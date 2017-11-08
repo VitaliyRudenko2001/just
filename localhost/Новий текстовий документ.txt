@@ -1,0 +1,46 @@
+    var c = document.getElementById('container');
+    var d = document.createElement('DIV');
+    var ell=document.getElementById("txt");
+    d.style.backgroundColor="grey";
+    d.style.height="15%";
+    d.style.width="30%";
+    var t = document.createTextNode(ell.value);
+    d.appendChild(t);
+    ell=document.createElement("DIV");
+    t = document.createTextNode("Click here");
+    ell.appendChild(t);
+    d.appendChild(ell);
+    c.appendChild(d);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center>
+<form action="vxod_php1.php" method="POST" id="frm">
+<p><textarea rows="5" cols="45" name="text" id="txt" placeholder="Напишите пост :)"></textarea></p>
+<input type="submit" value="ОТправить!" name="test">
+<div id='container'></div>
+</form>
+</center>
